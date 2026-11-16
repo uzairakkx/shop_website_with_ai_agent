@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmad Uzair Shop | Quality everyday products, fast delivery</title>
+  <meta name="description" content="Ahmad Uzair Shop: quality everyday products, honest prices and quick delivery across Pakistan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#home" class="brand">Ahmad Uzair Shop</a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#products">Featured Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="btn btn--accent" data-open-chat>Chat with AI</button>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <h1>Everyday products you can trust, at prices that make sense.</h1>
+        <p>Carefully chosen items, checked before they ship and delivered to your door. Not sure what to pick? Ask our assistant any time.</p>
+        <div class="hero__actions">
+          <a href="#products" class="btn btn--accent">Browse Products</a>
+          <button class="btn btn--ghost" data-open-chat>Ask a question</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <p class="section__lead">Six customer favourites. Tap "Inquire via AI" for stock, delivery time or help choosing.</p>
+        <div class="grid">
+          <article class="card"><div class="card__img" style="--tile:#d9ece6">🎧</div><div class="card__body"><h3>Wireless Earbuds</h3><p>Clear sound, 24-hour battery and a pocket-size charging case.</p><div class="price">PKR 4,500 / $16</div><button class="btn btn--outline" data-product="Wireless Earbuds">Inquire via AI</button></div></article>
+          <article class="card"><div class="card__img" style="--tile:#f7e8c4">⌚</div><div class="card__body"><h3>Smart Watch</h3><p>Tracks steps, sleep and heart rate. Shows call and message alerts.</p><div class="price">PKR 7,900 / $28</div><button class="btn btn--outline" data-product="Smart Watch">Inquire via AI</button></div></article>
+          <article class="card"><div class="card__img" style="--tile:#e4e0f2">👜</div><div class="card__body"><h3>Leather Wallet</h3><p>Slim genuine-leather wallet with six card slots and a coin pocket.</p><div class="price">PKR 2,200 / $8</div><button class="btn btn--outline" data-product="Leather Wallet">Inquire via AI</button></div></article>
+          <article class="card"><div class="card__img" style="--tile:#d6e6f5">🎒</div><div class="card__body"><h3>Travel Backpack</h3><p>Water-resistant, padded laptop sleeve, fits a 15.6-inch laptop.</p><div class="price">PKR 5,600 / $20</div><button class="btn btn--outline" data-product="Travel Backpack">Inquire via AI</button></div></article>
+          <article class="card"><div class="card__img" style="--tile:#f6dcd3">💡</div><div class="card__body"><h3>LED Desk Lamp</h3><p>Three brightness levels, touch control and a USB charging port.</p><div class="price">PKR 3,100 / $11</div><button class="btn btn--outline" data-product="LED Desk Lamp">Inquire via AI</button></div></article>
+          <article class="card"><div class="card__img" style="--tile:#dcebd2">🧴</div><div class="card__body"><h3>Steel Water Bottle</h3><p>Keeps drinks cold for 24 hours or hot for 12. Leak-proof lid.</p><div class="price">PKR 1,800 / $6</div><button class="btn btn--outline" data-product="Steel Water Bottle">Inquire via AI</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="about">
+      <div class="container">
+        <h2>Why shop with us</h2>
+        <div class="trust">
+          <div><h3>Quality you can check</h3><p>Every product is inspected before packing, and faulty items are replaced.</p></div>
+          <div><h3>Support that answers</h3><p>Ask our AI assistant anytime. It can pass difficult questions to our team.</p></div>
+          <div><h3>Fast delivery</h3><p>Orders ship within 24 hours and arrive in 2 to 4 working days.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div><h3>Ahmad Uzair Shop</h3><p>Shop 12, Main Market<br>Peshawar, Khyber Pakhtunkhwa, Pakistan</p></div>
+      <div><h3>Business hours</h3><p>Mon to Sat: 10:00 am to 8:00 pm<br>Sunday: closed</p></div>
+      <div><h3>Contact</h3><p>Phone: +92 300 0000000<br>Email: hello@ahmaduzairshop.example</p></div>
+    </div>
+    <p class="footer__copy">&copy; <span id="year">2026</span> Ahmad Uzair Shop. All rights reserved.</p>
+  </footer>
+
+  <!-- Chat widget -->
+  <button class="chat-fab" id="chatFab" aria-label="Open chat" aria-expanded="false">💬</button>
+  <section class="chat" id="chatWindow" aria-label="Ahmad Uzair Shop Assistant" hidden>
+    <header class="chat__head">
+      <div><strong>Ahmad Uzair Shop Assistant</strong><span class="status"><i></i>Online</span></div>
+      <button id="chatClose" aria-label="Close chat">&times;</button>
+    </header>
+    <div class="chat__msgs" id="chatMsgs" aria-live="polite"></div>
+    <div class="typing" id="typing" hidden><span></span><span></span><span></span></div>
+    <div class="chat__form">
+      <input id="chatInput" type="text" placeholder="Type your question..." autocomplete="off" aria-label="Message">
+      <button class="btn btn--accent" id="chatSend">Send</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

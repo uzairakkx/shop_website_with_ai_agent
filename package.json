@@ -1,0 +1,8 @@
+{
+  "name": "ahmad-uzair-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ahmad Uzair Shop website with a Dify.ai support chatbot via a Netlify Function",
+  "engines": { "node": ">=18" },
+  "scripts": { "dev": "netlify dev" }
+}
